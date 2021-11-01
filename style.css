@@ -1,5 +1,5 @@
 /* Starting project from mobile 1st and then working to desktop */
-/* Setting variables for colour in project */
+/* Setting variables for colours in project */
 
 :root {
   --clr-primary-darkblue: hsl(233, 47%, 7%);
@@ -45,9 +45,8 @@ body {
 }
 
 .hero{
-  background: url('images/image-header-mobile.jpg') no-repeat center center/cover;
-  background-blend-mode: darken;
-  width: 100%;
+  background: url('images/image-header-mobile.jpg') center center/cover no-repeat;
+  width: 50%;
   height: 280px;
   position: relative;
   overflow:hidden;
@@ -99,11 +98,12 @@ body {
 @media (min-width: 765px)  {
   .card-container {
     flex-direction: row-reverse;
-    min-width: 800px;
+    min-width: 1200px;
+    min-height: 500px;
   }
   .hero {
-    max-width: 50%;
-    min-height: 350px;
+    min-height: 500px;
+    background: url('images/image-header-desktop.jpg') center center/cover no-repeat;
   }
   .card-contents {
     text-align: start;
@@ -118,8 +118,6 @@ body {
   .paragraph{
     padding-left: 0;
   }
-  
-  
 }
 
 
